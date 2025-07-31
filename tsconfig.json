@@ -1,0 +1,25 @@
+{
+  "compilerOptions": {
+    "module": "node16",
+    "moduleResolution": "node16",
+    "resolveJsonModule": true,
+    "target": "es2019",
+    "lib": [
+      "es2018",
+      "dom",
+      "esnext"
+    ],
+    "allowJs": true,
+    "noImplicitAny": true,
+    "strictNullChecks": true,
+    "removeComments": true,
+    "sourceMap": true,
+    "outDir": "./build/"
+  },
+  "include": [
+    "src/**/*"
+, "compile-content.js"  ],
+  "exclude": [
+    "node_modules"
+  ]
+}

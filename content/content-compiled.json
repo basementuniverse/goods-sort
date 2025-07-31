@@ -1,0 +1,734 @@
+[
+  {
+    "name": "products",
+    "type": "json",
+    "args": [
+      [
+        {
+          "id": "a",
+          "name": "A",
+          "image": "",
+          "matches": [
+            "a"
+          ],
+          "points": 10
+        },
+        {
+          "id": "b",
+          "name": "B",
+          "image": "",
+          "matches": [
+            "b"
+          ],
+          "points": 12
+        },
+        {
+          "id": "c",
+          "name": "C",
+          "image": "",
+          "matches": [
+            "c"
+          ],
+          "points": 14
+        },
+        {
+          "id": "d",
+          "name": "D",
+          "image": "",
+          "matches": [
+            "d"
+          ],
+          "points": 16
+        },
+        {
+          "id": "e",
+          "name": "E",
+          "image": "",
+          "matches": [
+            "e"
+          ],
+          "points": 18
+        },
+        {
+          "id": "f",
+          "name": "F",
+          "image": "",
+          "matches": [
+            "f"
+          ],
+          "points": 20
+        }
+      ]
+    ]
+  },
+  {
+    "name": "test-1-shelf",
+    "type": "json",
+    "args": [
+      {
+        "id": "test-1-shelf",
+        "name": "Test 1: Shelf",
+        "description": "",
+        "grid": {
+          "width": 3,
+          "height": 2
+        },
+        "actors": [
+          {
+            "gridPosition": {
+              "x": 0,
+              "y": 0
+            },
+            "type": "shelf",
+            "offset": {
+              "x": -0.1,
+              "y": 0.1
+            },
+            "products": [
+              null,
+              "a",
+              null
+            ]
+          },
+          {
+            "gridPosition": {
+              "x": 0,
+              "y": 1
+            },
+            "type": "shelf",
+            "products": [
+              "a",
+              "a",
+              null
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "test-2-closing-shelf",
+    "type": "json",
+    "args": [
+      {
+        "id": "test-2-closing-shelf",
+        "name": "Test 2: Closing Shelf",
+        "description": "",
+        "grid": {
+          "width": 3,
+          "height": 2
+        },
+        "actors": [
+          {
+            "gridPosition": {
+              "x": 0,
+              "y": 0
+            },
+            "type": "closing-shelf",
+            "offset": {
+              "x": -0.1,
+              "y": 0.1
+            },
+            "products": [
+              null,
+              "a",
+              null
+            ]
+          },
+          {
+            "gridPosition": {
+              "x": 0,
+              "y": 1
+            },
+            "type": "shelf",
+            "products": [
+              "a",
+              "a",
+              null
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "test-3-deep-shelf",
+    "type": "json",
+    "args": [
+      {
+        "id": "test-3-deep-shelf",
+        "name": "Test 3: Deep Shelf",
+        "description": "",
+        "grid": {
+          "width": 3,
+          "height": 2
+        },
+        "lockedProducts": [
+          {
+            "shelfReference": "test-shelf",
+            "product": 4
+          }
+        ],
+        "actors": [
+          {
+            "reference": "test-shelf",
+            "gridPosition": {
+              "x": 0,
+              "y": 0
+            },
+            "type": "deep-shelf",
+            "offset": {
+              "x": -0.5,
+              "y": 0.3
+            },
+            "layers": [
+              [
+                null,
+                "a",
+                null
+              ],
+              [
+                "b",
+                "c",
+                "d"
+              ],
+              [
+                null,
+                "a",
+                "b"
+              ]
+            ]
+          },
+          {
+            "gridPosition": {
+              "x": 0,
+              "y": 1
+            },
+            "type": "shelf",
+            "slotCount": 6,
+            "products": [
+              "a",
+              "a",
+              null,
+              null,
+              null,
+              null
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "test-4-disappearing-shelf",
+    "type": "json",
+    "args": [
+      {
+        "id": "test-4-disappearing-shelf",
+        "name": "Test 4: Disappearing Shelf",
+        "description": "",
+        "grid": {
+          "width": 3,
+          "height": 3
+        },
+        "actors": [
+          {
+            "gridPosition": {
+              "x": 0,
+              "y": 0
+            },
+            "type": "disappearing-shelf",
+            "offset": {
+              "x": -0.1,
+              "y": 0.1
+            },
+            "shelf": {
+              "type": "shelf",
+              "products": [
+                null,
+                "a",
+                null
+              ]
+            }
+          },
+          {
+            "gridPosition": {
+              "x": 0,
+              "y": 1
+            },
+            "type": "shelf",
+            "products": [
+              "a",
+              "b",
+              null
+            ]
+          },
+          {
+            "gridPosition": {
+              "x": 0,
+              "y": 2
+            },
+            "type": "shelf",
+            "products": [
+              "a",
+              null,
+              null
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "test-5-supply-shelf",
+    "type": "json",
+    "args": [
+      {
+        "id": "test-5-supply-shelf",
+        "name": "Test 5: Supply Shelf",
+        "description": "",
+        "grid": {
+          "width": 3,
+          "height": 2
+        },
+        "actors": [
+          {
+            "gridPosition": {
+              "x": 0,
+              "y": 0
+            },
+            "type": "supply-shelf",
+            "offset": {
+              "x": 1,
+              "y": -0.1
+            },
+            "shelf": {
+              "type": "deep-shelf",
+              "slotCount": 1,
+              "layers": [
+                [
+                  "a"
+                ],
+                [
+                  "b"
+                ],
+                [
+                  "c"
+                ]
+              ]
+            }
+          },
+          {
+            "gridPosition": {
+              "x": 0,
+              "y": 1
+            },
+            "type": "shelf",
+            "slotCount": 6,
+            "products": [
+              "a",
+              "a",
+              null,
+              null,
+              null,
+              null
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "test-6-carousel",
+    "type": "json",
+    "args": [
+      {
+        "id": "test-6-carousel",
+        "name": "Test 6: Carousel",
+        "description": "",
+        "grid": {
+          "width": 3,
+          "height": 2
+        },
+        "lockedProducts": [
+          {
+            "shelfReference": "test-shelf",
+            "product": 2
+          }
+        ],
+        "actors": [
+          {
+            "gridPosition": {
+              "x": 0,
+              "y": 0
+            },
+            "type": "carousel",
+            "orientation": "horizontal",
+            "speed": 0.5,
+            "shelves": [
+              {
+                "type": "closing-shelf",
+                "offset": {
+                  "x": 0,
+                  "y": 0.5
+                },
+                "products": [
+                  "a",
+                  null,
+                  "b"
+                ]
+              },
+              {
+                "type": "shelf",
+                "products": [
+                  "c",
+                  "b",
+                  "b"
+                ]
+              }
+            ]
+          },
+          {
+            "reference": "test-shelf",
+            "gridPosition": {
+              "x": 0,
+              "y": 1
+            },
+            "type": "shelf",
+            "products": [
+              "a",
+              "a",
+              null
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "test-7-collapse",
+    "type": "json",
+    "args": [
+      {
+        "id": "test-7-collapse",
+        "name": "Test 7: Collapse",
+        "description": "",
+        "grid": {
+          "width": 3,
+          "height": 3
+        },
+        "actors": [
+          {
+            "gridPosition": {
+              "x": -3,
+              "y": 0
+            },
+            "type": "collapse",
+            "grid": {
+              "width": 9,
+              "height": 4
+            },
+            "orientation": "horizontal",
+            "direction": "center",
+            "actors": [
+              {
+                "type": "collapse",
+                "grid": {
+                  "width": 3,
+                  "height": 4
+                },
+                "orientation": "vertical",
+                "direction": "positive",
+                "actors": [
+                  {
+                    "type": "disappearing-shelf",
+                    "shelf": {
+                      "type": "shelf",
+                      "products": [
+                        "a",
+                        "a",
+                        null
+                      ]
+                    }
+                  },
+                  {
+                    "type": "disappearing-shelf",
+                    "shelf": {
+                      "type": "shelf",
+                      "products": [
+                        "b",
+                        "b",
+                        null
+                      ]
+                    }
+                  },
+                  {
+                    "type": "disappearing-shelf",
+                    "shelf": {
+                      "type": "shelf",
+                      "products": [
+                        "c",
+                        "c",
+                        null
+                      ]
+                    }
+                  },
+                  {
+                    "type": "disappearing-shelf",
+                    "shelf": {
+                      "type": "shelf",
+                      "products": [
+                        "a",
+                        "b",
+                        "c"
+                      ]
+                    }
+                  }
+                ]
+              },
+              {
+                "type": "collapse",
+                "grid": {
+                  "width": 3,
+                  "height": 4
+                },
+                "orientation": "vertical",
+                "direction": "negative",
+                "actors": [
+                  {
+                    "type": "disappearing-shelf",
+                    "shelf": {
+                      "type": "shelf",
+                      "products": [
+                        "d",
+                        "d",
+                        null
+                      ]
+                    }
+                  },
+                  {
+                    "type": "disappearing-shelf",
+                    "shelf": {
+                      "type": "shelf",
+                      "products": [
+                        "e",
+                        "e",
+                        null
+                      ]
+                    }
+                  },
+                  {
+                    "type": "disappearing-shelf",
+                    "shelf": {
+                      "type": "shelf",
+                      "products": [
+                        "f",
+                        "f",
+                        null
+                      ]
+                    }
+                  },
+                  {
+                    "type": "disappearing-shelf",
+                    "shelf": {
+                      "type": "shelf",
+                      "products": [
+                        "d",
+                        "e",
+                        "f"
+                      ]
+                    }
+                  }
+                ]
+              },
+              {
+                "type": "collapse",
+                "grid": {
+                  "width": 3,
+                  "height": 4
+                },
+                "orientation": "vertical",
+                "direction": "center",
+                "actors": [
+                  {
+                    "type": "disappearing-shelf",
+                    "shelf": {
+                      "type": "shelf",
+                      "products": [
+                        "a",
+                        "a",
+                        null
+                      ]
+                    }
+                  },
+                  {
+                    "type": "disappearing-shelf",
+                    "shelf": {
+                      "type": "shelf",
+                      "products": [
+                        "b",
+                        "b",
+                        null
+                      ]
+                    }
+                  },
+                  {
+                    "type": "disappearing-shelf",
+                    "shelf": {
+                      "type": "shelf",
+                      "products": [
+                        "c",
+                        "c",
+                        null
+                      ]
+                    }
+                  },
+                  {
+                    "type": "disappearing-shelf",
+                    "shelf": {
+                      "type": "shelf",
+                      "products": [
+                        "a",
+                        "b",
+                        "c"
+                      ]
+                    }
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "test-8-display-shelf",
+    "type": "json",
+    "args": [
+      {
+        "id": "test-8-display-shelf",
+        "name": "Test 8: Display Shelf",
+        "description": "",
+        "grid": {
+          "width": 3,
+          "height": 3
+        },
+        "actors": [
+          {
+            "gridPosition": {
+              "x": 0,
+              "y": 0
+            },
+            "offset": {
+              "x": -0.1,
+              "y": 0
+            },
+            "type": "display-shelf",
+            "allowed": [
+              "a",
+              "b",
+              "c"
+            ],
+            "products": [
+              null,
+              null,
+              null
+            ]
+          },
+          {
+            "gridPosition": {
+              "x": 0,
+              "y": 1
+            },
+            "type": "shelf",
+            "products": [
+              "a",
+              "b",
+              "c"
+            ],
+            "ignore": true
+          },
+          {
+            "gridPosition": {
+              "x": 0,
+              "y": 2
+            },
+            "type": "shelf",
+            "products": [
+              "d",
+              null,
+              null
+            ],
+            "ignore": true
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "test-9-locking-shelf",
+    "type": "json",
+    "args": [
+      {
+        "id": "test-9-locking-shelf",
+        "name": "Test 9: Locking Shelf",
+        "description": "",
+        "grid": {
+          "width": 3,
+          "height": 5
+        },
+        "actors": [
+          {
+            "gridPosition": {
+              "x": 0,
+              "y": 0
+            },
+            "offset": {
+              "x": -0.1,
+              "y": 0
+            },
+            "type": "locking-shelf",
+            "locking": {
+              "mode": "toggle-timer",
+              "time": 10,
+              "initiallyLocked": true
+            },
+            "shelf": {
+              "type": "shelf",
+              "products": [
+                null,
+                null,
+                null
+              ]
+            }
+          },
+          {
+            "gridPosition": {
+              "x": 0,
+              "y": 1
+            },
+            "type": "shelf",
+            "products": [
+              "a",
+              "b",
+              "c"
+            ]
+          },
+          {
+            "gridPosition": {
+              "x": 0,
+              "y": 2
+            },
+            "type": "shelf",
+            "products": [
+              "d",
+              null,
+              null
+            ]
+          }
+        ]
+      }
+    ]
+  }
+]

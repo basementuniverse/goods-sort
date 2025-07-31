@@ -1,0 +1,191 @@
+{
+  "id": "test-7-collapse",
+  "name": "Test 7: Collapse",
+  "description": "",
+  "grid": {
+    "width": 3,
+    "height": 3
+  },
+  "actors": [
+    {
+      "gridPosition": {
+        "x": -3,
+        "y": 0
+      },
+      "type": "collapse",
+      "grid": {
+        "width": 9,
+        "height": 4
+      },
+      "orientation": "horizontal",
+      "direction": "center",
+      "actors": [
+        {
+          "type": "collapse",
+          "grid": {
+            "width": 3,
+            "height": 4
+          },
+          "orientation": "vertical",
+          "direction": "positive",
+          "actors": [
+            {
+              "type": "disappearing-shelf",
+              "shelf": {
+                "type": "shelf",
+                "products": [
+                  "a",
+                  "a",
+                  null
+                ]
+              }
+            },
+            {
+              "type": "disappearing-shelf",
+              "shelf": {
+                "type": "shelf",
+                "products": [
+                  "b",
+                  "b",
+                  null
+                ]
+              }
+            },
+            {
+              "type": "disappearing-shelf",
+              "shelf": {
+                "type": "shelf",
+                "products": [
+                  "c",
+                  "c",
+                  null
+                ]
+              }
+            },
+            {
+              "type": "disappearing-shelf",
+              "shelf": {
+                "type": "shelf",
+                "products": [
+                  "a",
+                  "b",
+                  "c"
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "type": "collapse",
+          "grid": {
+            "width": 3,
+            "height": 4
+          },
+          "orientation": "vertical",
+          "direction": "negative",
+          "actors": [
+            {
+              "type": "disappearing-shelf",
+              "shelf": {
+                "type": "shelf",
+                "products": [
+                  "d",
+                  "d",
+                  null
+                ]
+              }
+            },
+            {
+              "type": "disappearing-shelf",
+              "shelf": {
+                "type": "shelf",
+                "products": [
+                  "e",
+                  "e",
+                  null
+                ]
+              }
+            },
+            {
+              "type": "disappearing-shelf",
+              "shelf": {
+                "type": "shelf",
+                "products": [
+                  "f",
+                  "f",
+                  null
+                ]
+              }
+            },
+            {
+              "type": "disappearing-shelf",
+              "shelf": {
+                "type": "shelf",
+                "products": [
+                  "d",
+                  "e",
+                  "f"
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "type": "collapse",
+          "grid": {
+            "width": 3,
+            "height": 4
+          },
+          "orientation": "vertical",
+          "direction": "center",
+          "actors": [
+            {
+              "type": "disappearing-shelf",
+              "shelf": {
+                "type": "shelf",
+                "products": [
+                  "a",
+                  "a",
+                  null
+                ]
+              }
+            },
+            {
+              "type": "disappearing-shelf",
+              "shelf": {
+                "type": "shelf",
+                "products": [
+                  "b",
+                  "b",
+                  null
+                ]
+              }
+            },
+            {
+              "type": "disappearing-shelf",
+              "shelf": {
+                "type": "shelf",
+                "products": [
+                  "c",
+                  "c",
+                  null
+                ]
+              }
+            },
+            {
+              "type": "disappearing-shelf",
+              "shelf": {
+                "type": "shelf",
+                "products": [
+                  "a",
+                  "b",
+                  "c"
+                ]
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

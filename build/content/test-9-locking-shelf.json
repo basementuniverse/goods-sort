@@ -1,0 +1,59 @@
+{
+  "id": "test-9-locking-shelf",
+  "name": "Test 9: Locking Shelf",
+  "description": "",
+  "grid": {
+    "width": 3,
+    "height": 5
+  },
+  "actors": [
+    {
+      "gridPosition": {
+        "x": 0,
+        "y": 0
+      },
+      "offset": {
+        "x": -0.1,
+        "y": 0
+      },
+      "type": "locking-shelf",
+      "locking": {
+        "mode": "toggle-timer",
+        "time": 10,
+        "initiallyLocked": true
+      },
+      "shelf": {
+        "type": "shelf",
+        "products": [
+          null,
+          null,
+          null
+        ]
+      }
+    },
+    {
+      "gridPosition": {
+        "x": 0,
+        "y": 1
+      },
+      "type": "shelf",
+      "products": [
+        "a",
+        "b",
+        "c"
+      ]
+    },
+    {
+      "gridPosition": {
+        "x": 0,
+        "y": 2
+      },
+      "type": "shelf",
+      "products": [
+        "d",
+        null,
+        null
+      ]
+    }
+  ]
+}

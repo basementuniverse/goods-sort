@@ -1,0 +1,58 @@
+{
+  "id": "test-8-display-shelf",
+  "name": "Test 8: Display Shelf",
+  "description": "",
+  "grid": {
+    "width": 3,
+    "height": 3
+  },
+  "actors": [
+    {
+      "gridPosition": {
+        "x": 0,
+        "y": 0
+      },
+      "offset": {
+        "x": -0.1,
+        "y": 0
+      },
+      "type": "display-shelf",
+      "allowed": [
+        "a",
+        "b",
+        "c"
+      ],
+      "products": [
+        null,
+        null,
+        null
+      ]
+    },
+    {
+      "gridPosition": {
+        "x": 0,
+        "y": 1
+      },
+      "type": "shelf",
+      "products": [
+        "a",
+        "b",
+        "c"
+      ],
+      "ignore": true
+    },
+    {
+      "gridPosition": {
+        "x": 0,
+        "y": 2
+      },
+      "type": "shelf",
+      "products": [
+        "d",
+        null,
+        null
+      ],
+      "ignore": true
+    }
+  ]
+}

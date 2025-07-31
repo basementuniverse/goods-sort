@@ -1,0 +1,62 @@
+{
+  "id": "test-3-deep-shelf",
+  "name": "Test 3: Deep Shelf",
+  "description": "",
+  "grid": {
+    "width": 3,
+    "height": 2
+  },
+  "lockedProducts": [
+    {
+      "shelfReference": "test-shelf",
+      "product": 4
+    }
+  ],
+  "actors": [
+    {
+      "reference": "test-shelf",
+      "gridPosition": {
+        "x": 0,
+        "y": 0
+      },
+      "type": "deep-shelf",
+      "offset": {
+        "x": -0.5,
+        "y": 0.3
+      },
+      "layers": [
+        [
+          null,
+          "a",
+          null
+        ],
+        [
+          "b",
+          "c",
+          "d"
+        ],
+        [
+          null,
+          "a",
+          "b"
+        ]
+      ]
+    },
+    {
+      "gridPosition": {
+        "x": 0,
+        "y": 1
+      },
+      "type": "shelf",
+      "slotCount": 6,
+      "products": [
+        "a",
+        "a",
+        null,
+        null,
+        null,
+        null
+      ]
+    }
+  ]
+}

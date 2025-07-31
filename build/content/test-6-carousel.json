@@ -1,0 +1,61 @@
+{
+  "id": "test-6-carousel",
+  "name": "Test 6: Carousel",
+  "description": "",
+  "grid": {
+    "width": 3,
+    "height": 2
+  },
+  "lockedProducts": [
+    {
+      "shelfReference": "test-shelf",
+      "product": 2
+    }
+  ],
+  "actors": [
+    {
+      "gridPosition": {
+        "x": 0,
+        "y": 0
+      },
+      "type": "carousel",
+      "orientation": "horizontal",
+      "speed": 0.5,
+      "shelves": [
+        {
+          "type": "closing-shelf",
+          "offset": {
+            "x": 0,
+            "y": 0.5
+          },
+          "products": [
+            "a",
+            null,
+            "b"
+          ]
+        },
+        {
+          "type": "shelf",
+          "products": [
+            "c",
+            "b",
+            "b"
+          ]
+        }
+      ]
+    },
+    {
+      "reference": "test-shelf",
+      "gridPosition": {
+        "x": 0,
+        "y": 1
+      },
+      "type": "shelf",
+      "products": [
+        "a",
+        "a",
+        null
+      ]
+    }
+  ]
+}

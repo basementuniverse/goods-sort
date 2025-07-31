@@ -1,0 +1,52 @@
+[
+  {
+    "name": "products",
+    "type": "json",
+    "args": ["products.json"]
+  },
+  {
+    "name": "test-1-shelf",
+    "type": "json",
+    "args": ["test-1-shelf.json"]
+  },
+  {
+    "name": "test-2-closing-shelf",
+    "type": "json",
+    "args": ["test-2-closing-shelf.json"]
+  },
+  {
+    "name": "test-3-deep-shelf",
+    "type": "json",
+    "args": ["test-3-deep-shelf.json"]
+  },
+  {
+    "name": "test-4-disappearing-shelf",
+    "type": "json",
+    "args": ["test-4-disappearing-shelf.json"]
+  },
+  {
+    "name": "test-5-supply-shelf",
+    "type": "json",
+    "args": ["test-5-supply-shelf.json"]
+  },
+  {
+    "name": "test-6-carousel",
+    "type": "json",
+    "args": ["test-6-carousel.json"]
+  },
+  {
+    "name": "test-7-collapse",
+    "type": "json",
+    "args": ["test-7-collapse.json"]
+  },
+  {
+    "name": "test-8-display-shelf",
+    "type": "json",
+    "args": ["test-8-display-shelf.json"]
+  },
+  {
+    "name": "test-9-locking-shelf",
+    "type": "json",
+    "args": ["test-9-locking-shelf.json"]
+  }
+]

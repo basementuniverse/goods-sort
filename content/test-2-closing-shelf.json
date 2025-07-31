@@ -1,0 +1,39 @@
+{
+  "id": "test-2-closing-shelf",
+  "name": "Test 2: Closing Shelf",
+  "description": "",
+  "grid": {
+    "width": 3,
+    "height": 2
+  },
+  "actors": [
+    {
+      "gridPosition": {
+        "x": 0,
+        "y": 0
+      },
+      "type": "closing-shelf",
+      "offset": {
+        "x": -0.1,
+        "y": 0.1
+      },
+      "products": [
+        null,
+        "a",
+        null
+      ]
+    },
+    {
+      "gridPosition": {
+        "x": 0,
+        "y": 1
+      },
+      "type": "shelf",
+      "products": [
+        "a",
+        "a",
+        null
+      ]
+    }
+  ]
+}

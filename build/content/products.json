@@ -1,0 +1,56 @@
+[
+  {
+    "id": "a",
+    "name": "A",
+    "image": "",
+    "matches": [
+      "a"
+    ],
+    "points": 10
+  },
+  {
+    "id": "b",
+    "name": "B",
+    "image": "",
+    "matches": [
+      "b"
+    ],
+    "points": 12
+  },
+  {
+    "id": "c",
+    "name": "C",
+    "image": "",
+    "matches": [
+      "c"
+    ],
+    "points": 14
+  },
+  {
+    "id": "d",
+    "name": "D",
+    "image": "",
+    "matches": [
+      "d"
+    ],
+    "points": 16
+  },
+  {
+    "id": "e",
+    "name": "E",
+    "image": "",
+    "matches": [
+      "e"
+    ],
+    "points": 18
+  },
+  {
+    "id": "f",
+    "name": "F",
+    "image": "",
+    "matches": [
+      "f"
+    ],
+    "points": 20
+  }
+]
