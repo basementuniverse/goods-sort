@@ -4,6 +4,12 @@
 
 `npm install`
 
+## Build
+
+`npm run build` to build the project manually.
+
+`npm run watch` if you want to watch for changes and rebuild automatically after making changes.
+
 ## Run
 
 You will need `http-server` installed globally:
